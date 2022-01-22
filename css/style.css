@@ -1,0 +1,338 @@
+/* ------common Css------ */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	list-style: none;
+}
+img{
+	max-width: 100%;
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+/* ------header Css------ */
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	color: #414840;
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 10px 15px;
+	display: block; 
+	text-transform: uppercase;
+	font-weight: 700;
+	border: 1px solid transparent;
+}
+nav ul li a:hover{
+	border: 1px solid #414840;
+}
+.logo{
+	margin-top: 10px;
+}
+.menu-icon{
+	color: #454444;
+	display: none;   
+}
+/* ------banner Css------ */
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.ban-left{
+	float: left;
+	padding-top: 40px;
+	padding-right: 45px;
+	padding-left: 80px;
+}
+.ban-left h1{
+	font-family: Libre Baskerville;
+	font-weight: 400;
+	font-size: 57px;
+	line-height: 62.7px;
+}
+.ban-left p{
+	font-family: Roboto;
+	font-weight: 300px;
+	font-size: 25px;
+	line-height: 37.5px;
+}
+.col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-2 img{
+	float: right;
+	max-width: 100%;
+}
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+.btn{
+	display: inline-block;
+	color: #475F45;
+	background-color: white;
+	padding: 10px 20px;
+	margin: 30px 0;
+	font-weight: bold;
+	border: 1px solid #475F45;
+}
+.ban-left a{
+	font-family: Roboto;
+	font-weight: 700px;
+	font-size: 14px;
+	line-height: 16px;
+}
+.btn:hover{
+	color: white;
+	background-color:#475F45 ;
+}
+
+/* ------Content Css------ */
+.content{
+	background-color: #343D33;
+	margin-top: 50px;
+}
+.content-top{
+	display: flex;
+	width: 100%;
+	column-gap: 89px;
+	margin-bottom: 80px;
+}
+
+.con-top-right p{
+	font-family: Libre Baskerville;
+	font-size: 45px;
+	line-height: 50px;
+	font-weight: 400;
+	margin: 25px 0;
+	color: white;
+}
+.con-top-right span{
+	color: white;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 400px;
+	line-height: 30px;
+	display: block;
+}
+.con-top-right .con-btn{
+	display: inline-block;
+	color: white;
+	padding: 10px 20px;
+	margin: 30px 0;
+	font-weight: bold;
+	border: 1px solid white;
+}
+.content-wrapper{
+	max-width: 1040px;
+	margin: auto;
+	padding: 96px 0;
+}
+/* ------news and update Css------ */
+.news-content{
+	display: flex;
+	width: 100%;
+	column-gap: 49px;
+}
+.news-left, .news-right{
+	width: 50%;
+}
+.n-ri-1,.n-ri-2,.n-ri-3{
+	display: flex;
+	width: 100%;
+	column-gap: 20px;
+}
+.n-img, .n-text{
+	width: 50%;
+}
+.news{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.news-header{
+	padding-bottom: 50px;
+	font-family: Libre Baskerville;
+	font-weight: 400;
+	font-size: 45px;
+	line-height: 49.5px;
+}
+.news-left-bottom{
+	padding-top: 20px;
+}
+.news-left-bottom p{
+	font-family: Libre Baskerville;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 23px;
+	line-height: 25.3px;
+	padding-bottom: 15px;
+	color: #475F45;
+}
+.news-header span{
+	font-family: Roboto;
+	font-weight: 700px;
+	font-size: 14px;
+	line-height: 16.41px;
+	margin-top: 20px;
+	position: relative;
+	padding-left: 140px;
+}
+.news-header span::before{
+	content: "";
+	width: 131px;
+	height: 2px;
+	background-color: #475F45; 
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+}
+.news-header span::after{
+  font-family: "Font Awesome 5 Free";
+  content: "\f061";
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  padding-left: 10px;
+  color: #475F45;
+	
+}
+.news-left-bottom span{
+	font-family: Roboto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 16px;
+	color: #414840;
+
+}
+.news-left-bottom .date{
+	font-family: Roboto;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 24px;
+	padding-top: 15px;
+	color: #343D33;
+}
+.n-text span{
+	font-family: Roboto;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 24px;
+	color: #343D33;
+}
+.n-text p{
+	padding-bottom: 15px;
+}
+.n-text{
+	padding-top: 15px;
+}
+.solid{
+	width: 100%;
+	height: 1px;
+	Top: 171px;
+}
+.n-img{
+	padding-bottom: 10px;
+}
+.n-ri-2 .n-img,.n-ri-3 .n-img{
+	padding-top: 10px;
+}
+/* ------Contact Css------ */
+.contact{
+	display: flex;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 55px;
+	background-color: #414840;
+}
+.con-1, .con-2, .con-3{
+	width: 33%;
+}
+.con-2, .con-3{
+	padding-left: 100px;
+}
+.con-2-text ul li a{
+	font-family: Roboto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 16.41px;
+	color: white;
+}
+.con-2-text ul li{
+	list-style: none;
+}
+.con1-text{
+	padding-left: 18px;
+}
+.con-2-text{
+	padding-top: 15px;
+}
+.con1-text p{
+	font-family: Roboto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+.con-header h2{
+	font-family: Libre Baskerville;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 17.6px;
+	color: #FFFFFF;
+}
+.con-logo-3{
+	margin-top: 22px;
+}
+.con-logo-3 ul li a{
+	color: white;
+
+}
+.con-logo-3 ul{
+	display: flex;
+	column-gap: 10px;
+}
+.con-logo-3 ul li{
+	list-style: none;
+}
+/* ------footer Css------ */
+.fot{
+	text-align: center;
+	background-color: #343D33;
+
+}
+.fot p{
+	padding: 30px 0;
+}
+
